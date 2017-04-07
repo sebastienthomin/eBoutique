@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Projet_eBoutique</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Create Product</servlet-name>
+    <jsp-file>/WEB-INF/views/createProduct.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Create Product</servlet-name>
+    <url-pattern>/createProduct</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Panier</servlet-name>
+    <jsp-file>/WEB-INF/views/panier.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Panier</servlet-name>
+    <url-pattern>/panier</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Catalogue</servlet-name>
+    <jsp-file>/WEB-INF/views/catalogue.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Catalogue</servlet-name>
+    <url-pattern>/catalogue</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet creation produit</servlet-name>
+    <servlet-class>fr.m2i.formation.controller.CreateProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet creation produit</servlet-name>
+    <url-pattern>/createProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet consultation catalogue</servlet-name>
+    <servlet-class>fr.m2i.formation.controller.ViewCatalog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet consultation catalogue</servlet-name>
+    <url-pattern>/viewCatalog</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet consultation détails</servlet-name>
+    <servlet-class>fr.m2i.formation.controller.DetailsProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet consultation détails</servlet-name>
+    <url-pattern>/detailsProduct</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet authentification</servlet-name>
+    <servlet-class>fr.m2i.formation.controller.Authenticate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet authentification</servlet-name>
+    <url-pattern>/authenticateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Authentification</servlet-name>
+    <jsp-file>/WEB-INF/views/authenticate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Authentification</servlet-name>
+    <url-pattern>/authenticate</url-pattern>
+  </servlet-mapping>
+</web-app>
